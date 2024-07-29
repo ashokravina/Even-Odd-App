@@ -5,7 +5,7 @@ import './index.css'
 
 class EvenOddApp extends Component {
   state= {count:0}
-  getRandamNumber=()=> Math.ceil((Math.random()*100))
+  getRandamNumber=()=> Math.ceil((Math.random()*10))
   OnIncrement= ()=> {
     const RandomNumber= this.getRandamNumber()
     this.setState((prevState) => ({count:prevState.count + RandomNumber}))
